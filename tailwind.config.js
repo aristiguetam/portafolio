@@ -5,13 +5,23 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // darkMode: "class",
+  // lightMode : "media",
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors : {
+        primary : {
+          light:  '#6246EA',
+          // default: '#7F5AF0',
+          dark: '#7F5AF0',
+        },
+        background: {
+          light: "#FFFFFE",
+          // default: '#16161A',
+          dark: "#16161A" ,
+        },
       },
+     
     },
   },
   plugins: [],
