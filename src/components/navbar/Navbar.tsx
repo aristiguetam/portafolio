@@ -1,21 +1,22 @@
 import Link from "next/link";
 
-const Navbar = () => {
+import {ThemeSwitcher} from "../themeSwitcher/ThemeSwitcher";
+
+export const Navbar = () => {
     return (
-        <>
-            <nav 
-            className="bg-[#f8f5f2] dark:bg-background-dark py-6 sm:py-5 flex items-center mx-2 sm:mx-0 sm:fixed sm:top-0 sm:w-screen sm:z-50">
-                <div className="pl-5">
-                    <Link href={"/"}>
-                        <h2 className="text-lg font-bold text-primary-dark">
-                            Pedro Aristigueta
-                        </h2>
-                    </Link>
-                </div>
+            <nav className=" dark:bg-background-dark bg-background-light py-6 sm:py-5 flex items-center mx-2 sm:mx-0 sm:fixed sm:top-0 sm:w-screen  sm:z-50">
+                <Link href={"/"}>
+                    <div className="pl-2 sm:pl-10 flex flex-col justify-center items-center">
+                        <h1 className="text-lg text-[#2B2C34] dark:text-[#FFFFFE] font-bold">
+                            PEDRO ARISTIGUETA
+                        </h1>
+                        <small className="text-sm text-[#94A1B2] dark:text-[#7f5af0] font-semibold">Full Stack Developer</small>
+                    </div>
+                </Link>
 
                 <div className="flex-1" />
 
-                <div className="items-center justify-center space-x-5 hidden sm:flex sm:pr-20 xl:pr-40 ">
+                <div className="items-center justify-center space-x-5 hidden sm:flex sm:pr-14 ">
                     <div>
                         <Link href={"/"}>
                             <h3 className="text-lg text-[#2B2C34] dark:text-[#FFFFFE] cursor-pointer">
@@ -25,7 +26,7 @@ const Navbar = () => {
                     </div>
                     <div>
                         <Link href={"/"}>
-                            <h3 className="text-lg text-[#2B2C34] dark:text-[#FFFFFE] cursor-pointer">
+                            <h3 className="text-lg text-[#7f5af0] dark:text-[#7f5af0] cursor-pointer font-semibold">
                                 Certificaciones
                             </h3>
                         </Link>
@@ -37,16 +38,17 @@ const Navbar = () => {
                             </h3>
                         </Link>
                     </div>
+                    <ThemeSwitcher />
                 </div>
 
-                <div className="block sm:hidden">
+                
+                {/* <div className="hidden sm:w-16" /> */}
+
+                <div className="block sm:hidden pr-2">
                     <h3 className="text-lg  text-[#2B2C34] dark:text-[#FFFFFE]">
                         Menú
                     </h3>
                 </div>
             </nav>
-
-        </>
     )
 }
-export default Navbar;

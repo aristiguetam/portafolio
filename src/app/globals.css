@@ -5,7 +5,6 @@
 
 html,
 body {
-  @apply container mx-auto min-h-screen sm:mx-auto sm:container sm:min-h-screen; 
-  @apply bg-[#f8f5f2] dark:bg-background-dark
+  @apply max-w-full max-h-full; 
 }
 

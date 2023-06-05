@@ -1,5 +1,8 @@
-import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
+
+import { Footer, Navbar } from '@/components'
+import Providers from './providers'
+
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -10,13 +13,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="description" content="Portafolio de Pedro Aristigueta" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>
-        <header>
-          <Navbar />
-        </header>
-        <main>
-          {children}
-        </main>
+      <body className='bg-background-light dark:bg-background-dark' >
+        <Providers>
+          <header>
+            <Navbar />
+          </header>
+          <main>
+            {children}
+          </main>
+          <footer >
+            <Footer />
+          </footer>
+        </Providers>
       </body>
     </html>
   )
