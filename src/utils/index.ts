@@ -2,5 +2,5 @@
 
 
 
-export { isMobileOrDesktop } from "./isMobileOrDesktop";
+export { IsMobileOrDesktop } from "./isMobileOrDesktop";
 export * as validate from "./validateField";

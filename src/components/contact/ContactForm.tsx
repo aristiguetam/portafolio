@@ -3,8 +3,6 @@ import { useForm } from "@/hooks/useForm";
 import { motion } from "framer-motion";
 import { Notification } from "@/components";
 
-
-
 export const ContactForm = () => {
 
   const {
@@ -25,9 +23,9 @@ export const ContactForm = () => {
   } = useForm();
 
   const { asunto, email, title } = data
+
   if (error) return <Notification success={false} message={"¡Ha ocurrido un error!"} />
   if (success) return <Notification success={true} message={'¡Enviado con éxito!'} />
-
 
   return (
     <form className="space-y-2 sm:space-y-5" onSubmit={handleSubmit} noValidate >
@@ -40,7 +38,6 @@ export const ContactForm = () => {
           className={` ${select ? "pl-1 mb-1 block text-primary-dark font-semibold text-xs" : "pl-1 mb-1 text-white  font-semibold text-xs"}`} >
           Nombre
         </motion.label>
-
 
         <input
           type="text"

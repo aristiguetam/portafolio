@@ -6,11 +6,9 @@ import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-
 export const Navbar = () => {
 
     const { isMenuOpen, toggleMenu } = useContext(UIContext);
-
 
     return (
         <nav className=" dark:bg-background-dark bg-background-light py-6 sm:py-5 shadow-sm dark:shadow-none flex items-center mx-2 sm:mx-0 sm:fixed sm:top-0 sm:w-screen  sm:z-50">

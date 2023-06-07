@@ -1,7 +1,6 @@
 'use client';
 import { useContext } from "react"
 import { useRouter } from "next/navigation";
-import Link from "next/link"
 
 import { UIContext } from "@/context"
 import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher"

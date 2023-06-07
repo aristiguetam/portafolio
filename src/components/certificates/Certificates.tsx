@@ -6,8 +6,6 @@ import { useSliderShow } from "@/hooks/useSliderShow";
 import { certificates } from '../../../imageBase/projectsDb';
 import { CertificateCard } from "./CertificateCard";
 
-
-
 export const Certificates = () => {
 
   const { sliderLeft, sliderRight } = useSliderShow();

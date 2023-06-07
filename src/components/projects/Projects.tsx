@@ -1,9 +1,10 @@
 'use client';
-import CardProjects from './CardProjects'
-import { projects } from '../../../imageBase/projectsDb'
-import { motion, useInView, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
+import { motion, useInView, useAnimation } from 'framer-motion';
+
+import CardProjects from './CardProjects'
+import { projects } from '../../../imageBase/projectsDb'
 
 export const Projects = () => {
 
@@ -20,7 +21,7 @@ export const Projects = () => {
             sliderControls.start('visible');
         }
 
-    }, [isInView2]);
+    }, [isInView2 , mainControls, sliderControls]);
 
     useEffect(() => {
         if (isInView) {
@@ -28,9 +29,7 @@ export const Projects = () => {
             sliderControls.start('visible');
         }
 
-    }, [isInView]);
-
-
+    }, [isInView, mainControls, sliderControls]);
 
     return (
         <>

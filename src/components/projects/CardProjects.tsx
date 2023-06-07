@@ -1,6 +1,6 @@
 'use client';
-import Image from "next/image";
 import { useState } from "react"
+import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
@@ -49,7 +49,7 @@ const CardProjects = ({ projects: { images, description, id, github , website } 
                 <div className="my-4 flex gap-2 ">
                     <a href={github} target="_blank">
                         <button className="flex gap-2 items-center bg-primary-light dark:bg-primary-dark rounded-md font-normal sm:font-medium text-black dark:text-white text-lg px-4 py-2" >
-                            Ver proyecto  <img src="/github.png" alt="github" className="w-5 h-5 rounded-sm" />
+                            Ver proyecto  <Image width={0} height={0} sizes="100vw" src="/github.png" alt="github" className="w-5 h-5 rounded-sm" />
                         </button>
                     </a>
                     {

@@ -2,15 +2,12 @@
 import { faCircleCheck, faCircleExclamation, faRemove } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion"
-import { useState } from "react";
 
 interface Props {
     success: boolean;
-
     message: string;
 }
 export const Notification = ({ success, message }: Props) => {
-
 
     return (
 

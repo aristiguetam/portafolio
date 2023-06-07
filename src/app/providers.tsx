@@ -1,14 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
-import { ThemeProvider } from 'next-themes'
 
+import { ThemeProvider } from 'next-themes'
 import { motion} from 'framer-motion';
 import { Ring } from '@uiball/loaders'
+
 import { UIProvider } from "@/context";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
     const [mounted, setMounted] = useState(false);
-
 
     useEffect(() => {
         setMounted(true);

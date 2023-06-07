@@ -1,8 +1,8 @@
-import { isMobileOrDesktop } from "@/utils/isMobileOrDesktop";
+import { IsMobileOrDesktop } from "@/utils/isMobileOrDesktop";
 
 export const useSliderShow = () => {
     
-    const widhSlider = isMobileOrDesktop() ? 355 : 1200;
+    const widhSlider = IsMobileOrDesktop() ? 355 : 1200;
 
     const sliderLeft = () => {
         let slider = document.getElementById('slider') as HTMLDivElement;
