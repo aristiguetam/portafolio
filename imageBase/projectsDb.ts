@@ -60,7 +60,7 @@ export const projects: MyProjects = {
         {
             id: "1",
             name: "closet",
-            images: ["/closet-shop/shop02.png", "/closet-shop/shop01.png"],
+            images: ["/closet-Shop/shop02.png", "/closet-Shop/shop01.png"],
             description: 'Closet-Shop | E-Commerce. Creado desde cero, implementando las mejores prácticas, con Next.js, TypeScript, mongoDB, Docker y NextAuth.',
             github: 'https://github.com/aristiguetam/closet-shop',
             website: 'https://closet-shop-production.up.railway.app/'
