@@ -5,6 +5,7 @@
 
 html,
 body {
-  @apply max-w-full max-h-full; 
+  @apply max-w-full max-h-full;
+  @apply scroll-smooth; 
 }
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { Certificates, Contact, Hero, Projects, TecnologiesList } from "@/components";
+import {  Certificates, Contact, Hero, Projects, TecnologiesList } from "@/components";
 
 
 
@@ -12,6 +12,7 @@ export default function Home() {
       <Projects />
       <Certificates />
       <Contact />
+      
     </div>
   )
 }

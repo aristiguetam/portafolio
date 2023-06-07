@@ -2,11 +2,13 @@
 import { useState, useEffect } from "react";
 import { ThemeProvider } from 'next-themes'
 
-import { motion } from 'framer-motion';
+import { motion} from 'framer-motion';
 import { Ring } from '@uiball/loaders'
+import { UIProvider } from "@/context";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
     const [mounted, setMounted] = useState(false);
+
 
     useEffect(() => {
         setMounted(true);
@@ -29,13 +31,15 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.9 }}
         >
-
-            <ThemeProvider attribute='class'>
-                {children}
-            </ThemeProvider>
+            <UIProvider>
+                <ThemeProvider attribute='class'>
+                    {children}
+                </ThemeProvider>
+            </UIProvider>
         </motion.div>
     )
 
 }
 
 export default Providers;
+

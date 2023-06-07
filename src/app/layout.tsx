@@ -1,6 +1,6 @@
 import './globals.css'
 
-import { Footer, Navbar } from '@/components'
+import { Footer, Navbar, SideMenu } from '@/components'
 import Providers from './providers'
 
 
@@ -15,9 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className='bg-background-light dark:bg-background-dark' >
         <Providers>
+          <SideMenu />
           <header>
             <Navbar />
           </header>
+
           <main>
             {children}
           </main>

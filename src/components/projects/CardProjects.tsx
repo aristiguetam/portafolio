@@ -14,7 +14,7 @@ const CardProjects = ({ projects: { images, description, id, github , website } 
 
     const [textShow, setTextShow] = useState(false);
     const { isHover, productImage, setIsHover } = useTransitionImage({ images });
-    const img3 = `w-auto h-[400px] sm:h-[315px] sm:w-[600px] object-top rounded-md ${isHover ? 'sm:h-[315px] sm:w-auto' : ''} `
+    const img3 = `w-[300px] h-[200px] sm:h-[315px] sm:w-[600px] object-top rounded-md ${isHover ? 'sm:h-[315px] sm:w-auto' : ''} `
 
     return (
         <>
@@ -44,14 +44,14 @@ const CardProjects = ({ projects: { images, description, id, github , website } 
 
                 <div className="my-4 flex gap-2 ">
                     <a href={github} target="_blank">
-                        <button className="flex gap-2 items-center bg-primary-light dark:bg-primary-dark rounded-md font-light sm:font-medium text-black dark:text-white text-lg px-4 py-2" >
+                        <button className="flex gap-2 items-center bg-primary-light dark:bg-primary-dark rounded-md font-normal sm:font-medium text-black dark:text-white text-lg px-4 py-2" >
                             Ver proyecto  <img src="/github.png" alt="github" className="w-5 h-5 rounded-sm" />
                         </button>
                     </a>
                     {
                         id === '1' || id === '2' ? (
                             <a href={website} target="_blank">
-                            <button className="bg-primary-light dark:bg-primary-dark rounded-md font-light sm:font-medium text-black dark:text-white text-lg px-4 py-2" >
+                            <button className="bg-primary-light dark:bg-primary-dark rounded-md font-normal sm:font-medium text-black dark:text-white text-lg px-4 py-2" >
                                 Visitar sitio web <FontAwesomeIcon icon={faGlobe} className="text-black" />
                             </button>
                             </a>

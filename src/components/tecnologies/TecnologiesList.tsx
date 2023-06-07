@@ -1,20 +1,20 @@
-import Image from 'next/image'
 
 export const TecnologiesList = () => {
     return (
-        <>
-            <div className='flex justify-center items-center flex-wrap my-5 sm:space-x-4 sm:justify-between'>
-                <Image src={'/dockerLogo.png'} alt={'Docker'} width={100} height={100}  />
-                <Image src={'/node.js.png'} alt={'node'} width={100} height={100}  />
-                <Image src={'/postgress.png'} alt={'postgress'} width={100} height={100}  />
-                <Image src={'/tp.png'} alt={'tp'} width={100} height={100}  />
-                <Image src={'/js.png'} alt={'js'} width={100} height={100}  />
-                <Image src={'/mongodb.png'} alt={'mongo'} width={100} height={100}  />
-                <Image src={'/postman.png'} alt={'postman'} width={100} height={100}  />
-                <Image src={'/react.png'} alt={'react'} width={100} height={100}  />
+        <div className='bg-background-light relative flex items-center overflow-hidden '>
+            <div
+                className='my-4 flex w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth gap-3 scrollbar-hide '>
+                <img src={'/bxl-javascript.svg'} alt={'js'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/node.js.png'} alt={'node'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/postgress.png'} alt={'postgress'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/tp.png'} alt={'tp'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/js.png'} alt={'js'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/mongodb.png'} alt={'mongo'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/postman.png'} alt={'postman'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                <img src={'/react.png'} alt={'react'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
+                
             </div>
-        </>
+        </div>
     )
 }
 
-  

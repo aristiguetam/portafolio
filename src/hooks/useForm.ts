@@ -23,6 +23,8 @@ export const useForm = () => {
     const [select, setSelect] = useState(false);
     const [selectEmail, setSelectEmail] = useState(false);
     const [selectAsunto, setSelectAsunto] = useState(false);
+    const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
 
     const handleBlur = () => {
         setBlur(true);
@@ -62,7 +64,7 @@ export const useForm = () => {
         const { asunto, email, title } = data;
 
         if (validateField(email, title, asunto)) {
-            alert("Todos los campos son obligatorios");
+            setError(true);
             return;
         }
 
@@ -73,6 +75,8 @@ export const useForm = () => {
             title: "",
             asunto: "",
         });
+        setSuccess(true);
+
     }
 
 
@@ -90,6 +94,8 @@ export const useForm = () => {
         data,
         blur,
         select,
+        error,
+        success,
         selectEmail,
         selectAsunto,
         handleBlur,

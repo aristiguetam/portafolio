@@ -1,18 +1,19 @@
 'use client';
 import { useForm } from "@/hooks/useForm";
 import { motion } from "framer-motion";
-
+import { Notification } from "@/components";
 
 
 
 export const ContactForm = () => {
 
   const {
-     data,
+    data,
     select,
     selectAsunto,
     selectEmail,
-    blur,
+    error,
+    success,
     handleBlur,
     handleChange,
     handleFocus,
@@ -22,6 +23,11 @@ export const ContactForm = () => {
     handleFocusAsunto,
     handleFocusEmail
   } = useForm();
+
+  const { asunto, email, title } = data
+  if (error) return <Notification success={false} message={"¡Ha ocurrido un error!"} />
+  if (success) return <Notification success={true} message={'¡Enviado con éxito!'} />
+
 
   return (
     <form className="space-y-2 sm:space-y-5" onSubmit={handleSubmit} noValidate >
@@ -39,7 +45,7 @@ export const ContactForm = () => {
         <input
           type="text"
           name="title"
-          value={data.title}
+          value={title}
           onChange={handleChange}
           placeholder={select ? "" : 'Nombre'}
           onFocus={handleFocus}
@@ -61,7 +67,7 @@ export const ContactForm = () => {
         <input
           type="email"
           name="email"
-          value={data.email}
+          value={email}
           placeholder={selectEmail ? "" : 'Email'}
           onFocus={handleFocusEmail}
           onBlur={handleBlurEmail}
@@ -81,7 +87,7 @@ export const ContactForm = () => {
 
         <textarea
           name="asunto"
-          value={data.asunto}
+          value={asunto}
           onChange={handleChange}
           onBlur={handleBlurAsunto}
           onFocus={handleFocusAsunto}
@@ -90,7 +96,7 @@ export const ContactForm = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <button type="submit" className="bg-primary-dark font-medium text-base  rounded-md  flex items-center justify-center px-7 ">
+        <button disabled={title.length === 0 || email.length === 0 || asunto.length === 0} type="submit" className="bg-primary-dark font-medium text-base  rounded-md  flex items-center justify-center px-7 ">
           <span className="text-[#2B2C34] font-medium text-base p-2">Enviar</span>
         </button>
       </div>

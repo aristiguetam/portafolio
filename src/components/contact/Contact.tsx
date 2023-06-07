@@ -2,7 +2,7 @@ import { ContactForm } from "./ContactForm"
 
 export const Contact = () => {
     return (
-        <div className=" bg-background-dark dark:bg-background-light h-[630px] flex flex-col justify-center items-center">
+        <div id='contact' className=" bg-background-dark dark:bg-background-light h-[630px] flex flex-col justify-center items-center">
             <div className="justify-center items-center">
                 <h2 className="dark:text-[#2B2C34] text-[#FFFFFE] text-3xl font-bold sm:text-7xl sm:font-extrabold text-center">
                     Trabajemos <span className="text-[#7f5af0]">juntos.</span>
