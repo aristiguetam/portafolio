@@ -1,7 +1,7 @@
 import { useState, FormEvent } from "react";
 
 import { sendEmail } from "@/sendEmail/sendEmail";
-import { validateField } from "@/utils/validateField";
+import { validate } from "@/utils";
 
 type FormData = {
     email: string;
@@ -63,7 +63,7 @@ export const useForm = () => {
 
         const { asunto, email, title } = data;
 
-        if (validateField(email, title, asunto)) {
+        if (validate.validateField(email, title, asunto)) {
             setError(true);
             return;
         }

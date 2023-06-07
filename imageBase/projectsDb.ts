@@ -84,7 +84,7 @@ export const projects: MyProjects = {
         {
             id: "4",
             name: "jira",
-            images: ["/jira/jira01.png", "/jira/jira02.png"],
+            images: ["/Jira/jira01.png", "/Jira/jira02.png"],
             description: 'Jira |Clone Jira. Creado desde cero con Next.js, TypeScript, MongoDB y Docker, implementando diseño con Material-UI, obteniendo como resultado una interfaz de usuario bastante intuitiva y elegante.',
             github: 'https://github.com/aristiguetam/jiraclone'
         },

@@ -1,4 +1,4 @@
-
+'use client';
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,7 +13,7 @@ export const Certificates = () => {
   const { sliderLeft, sliderRight } = useSliderShow();
 
   return (
-    <div  id='certificates' className=" container mx-auto h-[500px] sm:h-[600px] w-auto mt-24">
+    <div id='certificates' className=" container mx-auto h-[500px] sm:h-[600px] w-auto mt-24">
       <div className="flex justify-start">
         <h2 className="text-3xl font-bold  text-[#2B2C34] dark:text-white w-auto  sm:text-start ">
           Certificados

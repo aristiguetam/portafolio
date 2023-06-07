@@ -32,7 +32,7 @@ export const ContactForm = () => {
   return (
     <form className="space-y-2 sm:space-y-5" onSubmit={handleSubmit} noValidate >
 
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <motion.label
           initial={{ opacity: 0, scale: 0.5 }}
           animate={select ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
@@ -50,7 +50,7 @@ export const ContactForm = () => {
           placeholder={select ? "" : 'Nombre'}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          className="dark:bg-background-dark bg-background-light rounded-md p-2 outline-none"
+          className="dark:bg-background-dark bg-background-light rounded-md p-2 outline-none "
         />
 
       </div>

@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 import { useState } from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -23,9 +24,12 @@ const CardProjects = ({ projects: { images, description, id, github , website } 
                 onMouseLeave={() => setIsHover(false)}
                 className={`flex bg-black justify-center items-center flex-col mx-4 space-y-2 shadow-md rounded-md`}>
                 <div className="flex justify-center items-center">
-                    <img
+                    <Image
                         src={productImage}
-                        alt={'proyecto'}
+                        alt={id}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
                         className={`object-cover w-auto h-auto rounded-md ${id === '3' ? img3 : ""} `} />
                 </div>
             </div>
@@ -49,7 +53,7 @@ const CardProjects = ({ projects: { images, description, id, github , website } 
                         </button>
                     </a>
                     {
-                        id === '1' || id === '2' ? (
+                        id === '1'  ? (
                             <a href={website} target="_blank">
                             <button className="bg-primary-light dark:bg-primary-dark rounded-md font-normal sm:font-medium text-black dark:text-white text-lg px-4 py-2" >
                                 Visitar sitio web <FontAwesomeIcon icon={faGlobe} className="text-black" />

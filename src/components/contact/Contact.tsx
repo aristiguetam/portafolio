@@ -10,7 +10,7 @@ export const Contact = () => {
                 <p className="text-sm font-medium sm:text-lg text-ellipsis text-center dark:text-[#2B2C34] text-[#FFFFFE] mt-2 sm:font-semibold">¿Tienes una idea genial que quieras llevar a cabo? Contáctame y hagamos realidad tu proyecto.</p>
             </div>
 
-            <div className="w-[350px]  h-[250px] sm:w-[800px] sm:h-[300px] my-7 ">
+            <div className="w-[350px]  h-[250px]  sm:w-[800px] sm:h-[300px] my-7 ">
                 <ContactForm />
             </div>
 

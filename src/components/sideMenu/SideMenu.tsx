@@ -22,7 +22,7 @@ export const SideMenu = () => {
                 isMenuOpen && (
                     <>
                         <div className="relative">
-                            <div className="fixed z-[20000] flex flex-col justify-center items-center h-screen w-screen dark:backdrop-blur-sm dark:bg-black/30  backdrop-blur-sm bg-white/30 ">
+                            <div className="fixed z-[20000] flex flex-col justify-center items-center h-screen w-screen  dark:bg-black/30  backdrop-blur-xl bg-white/30 ">
 
                                 <div className="absolute top-8 right-5">
                                     <FontAwesomeIcon icon={faXmark} size="2x" onClick={toggleMenu} />
@@ -31,20 +31,17 @@ export const SideMenu = () => {
                                 <div className=" fixed flex flex-col  items-center justify-center space-y-10 mb-10">
 
                                     <div>
-
-                                        {/* <Link href={"#projects"}> */}
-                                        <h3 onClick={() => navigateTo('#projects')} className="text-xl font-semibold text-[#2B2C34] dark:text-[#FFFFFE] cursor-pointer">
+                                        <h3 onClick={() => navigateTo('#projects')} className="text-xl font-bold text-[#7f5af0]  cursor-pointer">
                                             Proyectos
                                         </h3>
-                                        {/* </Link> */}
                                     </div>
                                     <div>
-                                        <h3 onClick={() => navigateTo('#certificates')} className="text-xl text-[#7f5af0] dark:text-[#7f5af0] cursor-pointer font-semibold">
+                                        <h3 onClick={() => navigateTo('#certificates')} className="text-xl text-[#7f5af0] cursor-pointer font-bold">
                                             Certificaciones
                                         </h3>
                                     </div>
                                     <div>
-                                        <h3 onClick={() => navigateTo('#contact')} className="text-xl text-[#2B2C34] dark:text-[#FFFFFE] cursor-pointer font-semibold">
+                                        <h3 onClick={() => navigateTo('#contact')} className="text-xl text-[#7f5af0] cursor-pointer font-bold">
                                             Contáctame
                                         </h3>
                                     </div>

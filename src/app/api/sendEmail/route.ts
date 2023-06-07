@@ -1,7 +1,8 @@
 
+import { NextRequest } from 'next/server';
 import { createTransport } from 'nodemailer';
 
-export async function POST(req: Response) {
+export async function POST(req: NextRequest) {
 
     const body = await req.json();
 
@@ -17,8 +18,8 @@ export async function POST(req: Response) {
         });
 
         const mailOptions = {
-            from: email,
-            to: "aristiguetam97@gmail.com",
+            from: "aristiguetam97@gmail.com",
+            to: email ,
             subject: title,
             text: asunto,
         };
