@@ -12,9 +12,9 @@ export const AboutHero = () => {
             </div>
             <div className="flex flex-col justify-center items-center pt-2 p-4 sm:p-0">
                 <p className='text-lg text-ellipsis font-medium text-[#2B2C34] dark:text-[#94A1B2] text-center pt-2' >
-                    Hola,
-                    soy de Venezuela, actualmente vivo en Lima-Perú, me apasiona la tecnología, el arte y el deporte.
-                    Actualmente, me destaco como Full Stack Developer con 1 año de experiencia creando, diseñando aplicaciones para dispositivos móviles y web.
+                    ¡Hola!<br />
+                    Actualmente vivo en Lima-Perú, me apasiona la tecnología, el arte y el deporte.
+                    Me destaco como Full Stack Developer con 1 año de experiencia creando, diseñando aplicaciones para dispositivos móviles y web.
                 </p>
                 <div className='flex my-8 shadow-lg'>
                     <a href={"#contact"}>
