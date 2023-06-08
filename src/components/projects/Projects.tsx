@@ -40,7 +40,7 @@ export const Projects = () => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.5, delay: 0.25 }}
+                transition={{ duration: 0.3, delay: 0.25 }}
                 ref={ref2}
                 id='projects'
                 className=' container mx-auto flex flex-col space-y-2  justify-center items-center h-[200px]  sm:space-y-0 sm:flex-row' >

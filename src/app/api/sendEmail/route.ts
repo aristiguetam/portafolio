@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
             from: "aristiguetam97@gmail.com",
             to: email ,
             subject: title,
-            text: asunto,
+            text: `¡Hola!, Gracias por contactarme, el asunto a tratar es el siguiente ${asunto}, confírmame y podremos organizar tu proyecto ` ,
         };
 
         const info = await transporter.sendMail(mailOptions);

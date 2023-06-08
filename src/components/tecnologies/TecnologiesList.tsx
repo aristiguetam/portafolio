@@ -4,7 +4,7 @@ export const TecnologiesList = () => {
 
     return (
         <div className='bg-transparent relative flex items-center overflow-hidden '>
-            <div className='mb-4 sm:my-4 flex w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth gap-3 scrollbar-hide '>
+            <div className='mb-12 sm:my-4 flex w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth gap-3 scrollbar-hide '>
                 <Image width={0} height={0} sizes="100vw" src={'/01.svg'} alt={'js'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
                 <Image width={0} height={0} sizes="100vw" src={'/02.svg'} alt={'node'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
                 <Image width={0} height={0} sizes="100vw" src={'/03.svg'} alt={'postgress'} className="inline-block h-[60px] sm:h-[120px] w-[100%] rounded-lg object-cover justify-center items-center" />
