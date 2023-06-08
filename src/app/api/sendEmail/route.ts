@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
             service: "gmail",
             auth: {
                 user: "aristiguetam97@gmail.com",
-                pass: "vzcgwkahzmjvtstf",
+                pass: process.env.GOOGLEPASS,
             },
         });
 
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
             from: "aristiguetam97@gmail.com",
             to: email ,
             subject: title,
-            text: `¡Hola!, Gracias por contactarme, el asunto a tratar es el siguiente ${asunto}, confírmame y podremos organizar tu proyecto ` ,
+            text: `¡Hola ${title}!, Gracias por contactarme, el asunto a tratar es el siguiente ${asunto}, confírmame y podremos organizar tu proyecto ` ,
         };
 
         const info = await transporter.sendMail(mailOptions);
