@@ -8,10 +8,11 @@ interface Props {
 
 export const sendEmail = async ({ asunto, email, title }: Props) => {
     try {
-        const { data } = await axios.post(`http://localhost:3000/api/sendEmail`, {  title, email, asunto })
+        const { data } = await axios.post(`https://pedro-arisitigueta-portafolio.vercel.app/api/sendEmail`, {  title, email, asunto })
         return data 
     } catch (error) {
         console.error('Error al enviar el correo electrónico:', error);
     }
 
 }
+
