@@ -6,7 +6,7 @@ interface Props {
     title: string
 }
 
-const host = process.env.HOSTNAME || "http://localhost:3000"
+const host = process.env.HOSTNAME || ""
 export const sendEmail = async ({ asunto, email, title }: Props) => {
     try {
         const { data } = await axios.post(`${host}/api/sendEmail`, {  title, email, asunto })
